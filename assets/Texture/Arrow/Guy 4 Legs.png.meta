@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "acfc95c8-b7cc-41cd-862e-5d228cb23873",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "Guy 4 Legs": {
+      "ver": "1.0.3",
+      "uuid": "f86a4c2d-44c7-4304-8466-194245306f54",
+      "rawTextureUuid": "acfc95c8-b7cc-41cd-862e-5d228cb23873",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 76,
+      "height": 64,
+      "rawWidth": 76,
+      "rawHeight": 64,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

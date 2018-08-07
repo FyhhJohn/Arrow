@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "05a6aa12-086c-46bf-9655-bfb93d0e77c7",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "Guy 2 Body": {
+      "ver": "1.0.3",
+      "uuid": "4535e57f-7aea-4f68-85c7-2cf56ade712a",
+      "rawTextureUuid": "05a6aa12-086c-46bf-9655-bfb93d0e77c7",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 132,
+      "height": 163,
+      "rawWidth": 132,
+      "rawHeight": 163,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

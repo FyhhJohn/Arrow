@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "65bb6c0e-9c93-40d4-86b2-1b3935d39c5f",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "Guy 4 Body": {
+      "ver": "1.0.3",
+      "uuid": "2acda31f-335d-4074-a28c-0375dddb80ea",
+      "rawTextureUuid": "65bb6c0e-9c93-40d4-86b2-1b3935d39c5f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 118,
+      "height": 141,
+      "rawWidth": 118,
+      "rawHeight": 141,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "c8593d5b-07be-4d4b-8ce1-573e883790f2",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "Guy 3 Legs": {
+      "ver": "1.0.3",
+      "uuid": "98d9d5ba-885c-4550-b2ed-745a2ca20cb8",
+      "rawTextureUuid": "c8593d5b-07be-4d4b-8ce1-573e883790f2",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 76,
+      "height": 69,
+      "rawWidth": 76,
+      "rawHeight": 69,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

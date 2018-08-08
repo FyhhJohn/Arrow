@@ -5,7 +5,7 @@ cc.Class({
 
     properties: {
         back: cc.Sprite,
-        heroPos: cc.Node,
+        monsterPre: cc.Prefab,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -13,6 +13,13 @@ cc.Class({
     onLoad () {
         cc.director.getCollisionManager().enabled = true;
         cc.director.getPhysicsManager().enabled = true;
+
+        this.schedule( this.addMonster,5 );
+    },
+
+    addMonster: function(){
+        var monster = cc.instantiate(this.monsterPre);
+        this.back.node.addChild(monster);
     },
 
     start () {

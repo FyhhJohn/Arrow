@@ -42,13 +42,11 @@ cc.Class({
         var delta = this.beginPos.sub(endPos);
 
         this._oneVector = delta.normalize();
-        // cc.log("oneVector = ",this._oneVector);
 
         //向量的角度计算，Math.atan2是获得弧度值，角度 = 弧度/PI*180
         var angle = this.common.getComponent("common").getAngle(delta) ;
 
-        // cc.log("-----------------onTouchMove-------------------------");
-        // cc.log("angle = ", angle);
+
         if ( angle < 45 && angle > -45 ){
             this.heroUp.node.setRotation(angle);
         }
@@ -61,7 +59,7 @@ cc.Class({
     onTouchEnd: function(event){
         cc.log("-----------------onTouchEnd-------------------------");
         var arrowClip = this.arch.getComponent(cc.Animation);
-        arrowClip.play("arrow",1);
+        arrowClip.play();
 
         this.arrow.node.active = false;
 

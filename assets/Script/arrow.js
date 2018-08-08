@@ -19,29 +19,20 @@ cc.Class({
         this.lastPos = this.node.position;
     },
 
-    onCollisionEnter: function (other, self) {
-        cc.log("onCollisionEnter");
+    onBeginContact:function(contact,selfCollider,otherCollider){
+        // cc.director.loadScene('hello');
+        selfCollider.node.destroy();
     },
 
-    update: function(dt){
-        if (this.node.position.y < 0 || this.node.position.x > cc.visibleRect.width){
+    update (dt) {
+        if (this.node.position.x > cc.visibleRect.width || this.node.position.y < 0){
             this.node.destroy();
-            cc.log("destroy");
-        }else{
+        }else if (this.lastPos){
+            var delta = this.node.position.sub(this.lastPos);
+            var angle = -Math.atan2(delta.y,delta.x) / Math.PI * 180 ;
+            this.node.setRotation(angle);
 
-            if (this.lastPos){
-                var delta = this.node.position.sub(this.lastPos);
-                var angle = -Math.atan2(delta.y,delta.x) / Math.PI * 180 ;
-                this.node.setRotation(angle);
-    
-                this.lastPos = this.node.position;
-            }
+            this.lastPos = this.node.position;
         }
     },
-
-    start () {
-
-    },
-
-    // update (dt) {},
 });

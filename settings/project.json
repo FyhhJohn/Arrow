@@ -8,16 +8,47 @@
   },
   "collision-matrix": [
     [
+      false
+    ],
+    [
+      false,
+      false,
+      true,
+      true,
       true
+    ],
+    [
+      false,
+      true,
+      false,
+      false,
+      true
+    ],
+    [
+      false,
+      true,
+      false,
+      false
+    ],
+    [
+      false,
+      true,
+      true,
+      false,
+      false
     ]
   ],
   "design-resolution-height": 640,
   "design-resolution-width": 960,
   "excluded-modules": [],
-  "fit-height": true,
+  "fit-height": false,
   "fit-width": true,
   "group-list": [
-    "default"
+    "default",
+    "monster",
+    "tower",
+    "arrow",
+    "ground"
   ],
   "simulator-orientation": false,
   "simulator-resolution": {

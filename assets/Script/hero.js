@@ -57,7 +57,6 @@ cc.Class({
     },
 
     onTouchEnd: function(event){
-        cc.log("-----------------onTouchEnd-------------------------");
         var arrowClip = this.arch.getComponent(cc.Animation);
         arrowClip.play();
 

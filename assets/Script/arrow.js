@@ -11,8 +11,6 @@ cc.Class({
     },
 
     shoot: function(force){
-        cc.log("shoot");
-
         this.getComponent(cc.RigidBody).awake = true;
         this.getComponent(cc.RigidBody).linearVelocity = force;
 
@@ -25,7 +23,7 @@ cc.Class({
     },
 
     update (dt) {
-        if (this.node.position.x > cc.visibleRect.width || this.node.position.y < 0){
+        if (this.node.position.x > cc.visibleRect.width || this.node.position.y < 173){
             this.node.destroy();
         }else if (this.lastPos){
             var delta = this.node.position.sub(this.lastPos);

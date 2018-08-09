@@ -1,4 +1,7 @@
-
+var MonsterState = cc.Enum({
+    Monster_Run: 0,
+    Monster_Attack: 1,
+});
 
 cc.Class({
     extends: cc.Component,
@@ -8,12 +11,12 @@ cc.Class({
         HP_cur: 100,
         hurmHP: 20,
         HPProgress: cc.ProgressBar,
+        moveSpeed: 100,
+        monsterState: MonsterState.Monster_Run,
     },
 
-    // LIFE-CYCLE CALLBACKS:
-
     onLoad () {
-        this.node.runAction(cc.moveBy(3,cc.v2(-900,0)));
+
     },
 
     onBeginContact:function(contact,selfCollider,otherCollider){
@@ -27,6 +30,7 @@ cc.Class({
             cc.log("攻击塔");
             otherCollider.getComponent("tower").setTowerHP(this.hurmHP);
             selfCollider.getComponent(cc.Animation).stop();
+            this.monsterState = MonsterState.Monster_Attack;
         }
     },
 
@@ -34,5 +38,10 @@ cc.Class({
 
     },
 
-    // update (dt) {},
+    update (dt) {
+        if (this.monsterState == MonsterState.Monster_Run){
+            var pos = this.moveSpeed*dt;
+            this.node.setPosition( cc.v2( this.node.position.x - pos,this.node.position.y ) );
+        }
+    },
 });
